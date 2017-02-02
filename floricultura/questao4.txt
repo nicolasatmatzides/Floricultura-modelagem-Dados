@@ -1,0 +1,29 @@
+Floricultura(Primary Key: Floricultura_id,,endereço-flori tipo:string,nome-flori tipo:string,cidade_flori tipo : string)
+		Floricultura_id referencia floricultura 
+
+FloriculturaEstoque(Floricultura_id,estoque_id,)
+	            ----------------------------
+		Floricultura_id referencia floricultura
+		estoque_id referencia estoque 
+FloriculturaCliente(Floricultura_id,Cliente_id,nome tipo:string,endereço tipo:string,telefone tipo:string,cidade tipo:string)
+	           ---------------------------
+		Floricultura_id teferencia floricultura
+		Cliente_id referencia cliente
+
+Cliente(Primary key: Cliente_id, nome tipo:string,endereço tipo : string, telefone tipo:string,cidade tipo: string ,Pedido_id, quantidade tipo:int)
+		Cliente_id referencia Cliente
+
+PedidoFlor(Pedido_id,Flor_id,nome tipo:sting,quantidade tipo:int)
+	   -----------------
+		Pedido_id referencia Pedido
+		Flor referencia Flor
+
+FloriculturaRegiao(Floricultura_id,Regiao_id)
+		  ---------------------------
+		Floricultura referencia floricultura
+		Regiao referencia regiao
+
+RegiaoCidade(Regiao_id,Cidade_id,endereço tipo:string)
+	    --------------------
+	 Regiao_id referencia regiao
+	cidade_id referencia cidade 	

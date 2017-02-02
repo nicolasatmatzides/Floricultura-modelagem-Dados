@@ -1,0 +1,10 @@
+Candidato(Primary Key: Candidato_id, Partido_id,Seção_id,Zona_id,Numero tipo:Int,Cpf tipo:int(12),nome tipo:String,NomePartido tipo:String)
+	Candidato_id referencia Candidato
+	Partido_id referencia Partido 
+	Seçao_id referencia seçao
+	Zona_id referencia Zona
+
+RegiaoZona(Regiao_id,Zona_id, Bairro tipo :String)
+	  -------------------	
+	Regiao_id referencia Regiao
+	Zona_id referencia Zona	
